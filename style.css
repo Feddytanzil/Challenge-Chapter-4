@@ -1,0 +1,13 @@
+.header {
+  position: absolute;
+  display: flex;
+  color: #f9b23d;
+  font-size: 36px;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  left: 119px;
+  top: 27px;
+}
