@@ -1,14 +1,11 @@
 body {
-  font-family: "open sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 49px;
-  position: absolute;
-  width: 410px;
-  height: 62px;
-  left: 218px;
-  color: #f9b23d;
+  text-transform: uppercase;
+  width: 1440px;
+  height: 1024px;
+  background-color: #9c835f;
 }
 
 #header {
