@@ -1,13 +1,93 @@
-.header {
+body {
+  font-family: "open sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 49px;
   position: absolute;
-  display: flex;
+  width: 410px;
+  height: 62px;
+  left: 218px;
   color: #f9b23d;
-  font-size: 36px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   width: 72px;
   height: 72px;
-  left: 119px;
-  top: 27px;
+  margin-left: 10px;
+}
+
+.title {
+  width: 410px;
+  height: 62px;
+  font-size: 36px;
+  margin-left: 10px;
+  color: #f9b23d;
+}
+
+.player-hands > input {
+  height: 115px;
+  width: 160px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.player-hands:hover {
+  transform: translate3d(0px, -8px, 0px);
+}
+
+.com-hands > input {
+  height: 115px;
+  width: 160px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.com-hands:hover {
+  transform: translate3d(0px, -8px, 0px);
+}
+
+#reset > input {
+  height: 71px;
+  width: 77px;
+}
+
+#content {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(3, 2fr);
+  grid-template-areas:
+    ". player . com ."
+    ". player vs com ."
+    ". player . com .";
+}
+
+#player {
+  grid-area: player;
+}
+
+#player div {
+  margin: 1.5rem;
+  border-radius: 10px;
+}
+
+#vs {
+  grid-area: vs;
+  padding-top: 30px;
+  color: #bd0000;
+}
+
+#com {
+  grid-area: com;
+}
+
+#com div {
+  margin: 1.5rem;
+  border-radius: 10px;
 }
